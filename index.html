@@ -1011,7 +1011,7 @@
     </script>
     <script>
         UnityLoader.compatibilityCheck = function (e, t, r) { t(); };
-        var gameInstance = UnityLoader.instantiate("gameContainer", "https://geometrydashmeltdown.io/Build/geometrydashmeltdown.io.json", {
+        var gameInstance = UnityLoader.instantiate("gameContainer", "https://geometrydashlite.io/games/geometrydashmeltdown/Build/GeometryDashMeltDown_.json", {
             onProgress: UnityProgress
         });
 
@@ -1056,7 +1056,7 @@
         (function () {
                 const originalWindowOpen = window.open;
                 window.open = function (url, ...args) {
-                    const blockedDomains = ['geometrydashmeltdown.io', 'anotherdomain.com'];
+                    const blockedDomains = ['geometrydashlite.io', 'anotherdomain.com'];
                     const targetDomain = (() => {
                         try {
                             return new URL(url).hostname;
@@ -1072,7 +1072,7 @@
                 const originalOpenURL = window.Application?.OpenURL;
                 if (originalOpenURL) {
                     window.Application.OpenURL = function (url) {
-                        const blockedDomains = ['geometrydashmeltdown.io', 'anotherdomain.com'];
+                        const blockedDomains = ['geometrydashlite.io', 'anotherdomain.com'];
                         const targetDomain = (() => {
                             try {
                                 return new URL(url).hostname;
